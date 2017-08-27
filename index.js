@@ -26,5 +26,5 @@ function currentLine(line){
       lineStr += n=line.length-1?'':', ';
     }
   }
-  return lineStr.substr(0, lineStr.length-2);
+  return lineStr;
 }
