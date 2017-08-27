@@ -22,9 +22,8 @@ function currentLine(line){
   }
   else {
     for(var n=0; n<line.length; n++){
-      lineStr += `${n+1}. ${line[n]}`;
-      lineStr += n=line.length-1?'':', ';
+      lineStr += `${n+1}. ${line[n]}, `;
     }
   }
-  return lineStr;
+  return lineStr.substr(0, line.length-2);
 }
