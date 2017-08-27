@@ -22,7 +22,7 @@ function currentLine(line){
   }
   else {
     for(var n=0; n<line.length; n++){
-      lineStr += `${n}. ${line[n]}, `
+      lineStr += `${n+1}. ${line[n]}, `
     }
   }
   return lineStr.substr(0, lineStr.length-3);
