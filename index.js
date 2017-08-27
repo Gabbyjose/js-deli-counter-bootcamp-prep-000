@@ -11,17 +11,17 @@ function nowServing(katzDeli){
     return "There is nobody waiting to be served!";
   }
   else {
-    return katzDeli.shift();
+    return `Currently serving ${katzDeli.shift()}`;
   }
 }
 
-function currentLine(katzDeliLine){
+function currentLine(line){
   var lineStr = `The line is current: `;
   if (katzDeliLine.length === 0){
-    return "The line is currently empty";
+    return "The line is currently empty.";
   }
   else {
-    for(n=0; n<katzDeliLine.length; n++){
+    for(var n=0; n<katzDeliLine.length; n++){
       lineStr += `${n}. ${katzDeliLine[n]}, `
     }
   }
