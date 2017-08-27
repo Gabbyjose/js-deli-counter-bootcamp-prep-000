@@ -2,7 +2,8 @@
 var katzDeli = [];
 
 function takeANumber(katzDeliLine, name){
-  return katzDeliLine +1;
+  katzDeliLine.push(name);
+  return `Welcome, ${name}. You are number ${katzDeliLine+1} in line.`
 }
 
 function nowServing(katzDeli){
